@@ -13,7 +13,7 @@
 - 为避免主力合约价格的跳空，甲醇期货主力选择的是收盘价按比例前复权(from RiceQuant)
 - 警惕期货的交易时间与股票有所不同，回测时要将因子shift(1)，收益率shift(-1)
 ### 4. 代码说明
-- utils.py：对基本面指标原时间序列进行一系列分析，确定ARIMA(p,d,q)最优参数
+- utils.py：对基本面指标原时间序列进行时间序列分析，确定ARIMA(p,d,q)最优参数
 - model.py：训练模型（arima、ols滚动回归）
 - backtest.py：基于交易信号的回测
 - spread_factor_analysis：基于基差数据的单因子趋势策略
